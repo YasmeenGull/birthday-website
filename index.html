@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A premium romantic birthday surprise website made with love.">
+  <title>Happy Birthday My Love</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader-particles" id="loaderParticles"></div>
+    <div class="loader-heart" aria-hidden="true">❤️</div>
+    <p>Preparing your birthday surprise...</p>
+    <div class="loader-bar" aria-hidden="true">
+      <span id="loaderProgress"></span>
+    </div>
+  </div>
+
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+  <div class="ambient-layer" id="ambientLayer" aria-hidden="true"></div>
+  <div class="effect-layer" id="effectLayer" aria-hidden="true"></div>
+
+  <main class="site-shell" id="top">
+    <section class="hero section" id="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A luxury little universe for the cutest birthday boy</p>
+        <h1 id="heroTitle">🎉 <span id="typedHero">Happy Birthday My Love</span> ❤️</h1>
+        <p class="hero-subtitle">You make every day of my life beautiful.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#loveLetter">💌 Open Letter</a>
+          <button class="btn ghost" type="button" id="heroMusicBtn">▶ Play Music</button>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" aria-label="Animated birthday cake with balloons and sparkles">
+        <div class="balloon balloon-one">🎈</div>
+        <div class="balloon balloon-two">🎈</div>
+        <div class="balloon balloon-three">🎈</div>
+        <div class="cake-wrap">
+          <div class="sparkle sparkle-one">✦</div>
+          <div class="sparkle sparkle-two">✧</div>
+          <div class="sparkle sparkle-three">✦</div>
+          <div class="cake" aria-hidden="true">
+            <div class="candles">
+              <span><i></i></span>
+              <span><i></i></span>
+              <span><i></i></span>
+            </div>
+            <div class="frosting"></div>
+            <div class="cake-layer top-layer"></div>
+            <div class="cake-layer middle-layer"></div>
+            <div class="cake-layer bottom-layer"></div>
+            <div class="plate"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown section compact-section reveal" aria-labelledby="countdownTitle">
+      <p class="section-kicker">Birthday clock</p>
+      <h2 id="countdownTitle">The Big Moment</h2>
+      <div class="countdown-grid" id="countdownGrid" aria-live="polite">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+      <p class="birthday-live" id="birthdayLive">🎂 Happy Birthday!</p>
+    </section>
+
+    <section class="love-letter section" id="loveLetter" aria-labelledby="letterTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Tiny envelope, giant feelings</p>
+        <h2 id="letterTitle">A Letter For You</h2>
+      </div>
+      <button class="envelope reveal" type="button" id="envelope" aria-expanded="false" aria-controls="letterPanel">
+        <span class="envelope-flap"></span>
+        <span class="envelope-body"></span>
+        <span class="envelope-seal">❤️</span>
+        <span class="envelope-label">Tap to open</span>
+      </button>
+      <article class="letter-panel" id="letterPanel" aria-live="polite">
+        <p id="letterText"></p>
+      </article>
+    </section>
+
+    <section class="memory-gallery section" aria-labelledby="galleryTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Little museum of us</p>
+        <h2 id="galleryTitle">Memory Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-card reveal" type="button" data-caption="The day your smile became my favorite view.">
+          <img src="assets/images/memory-starlight.svg" alt="Romantic starlight memory illustration">
+          <span>Favorite Smile</span>
+        </button>
+        <button class="gallery-card reveal" type="button" data-caption="Our silly laughs have their own national anthem.">
+          <img src="assets/images/memory-laugh.svg" alt="Cute laughing couple memory illustration">
+          <span>First Laugh</span>
+        </button>
+        <button class="gallery-card reveal" type="button" data-caption="A soft little date that still glows in my heart.">
+          <img src="assets/images/memory-date.svg" alt="Rose garden date memory illustration">
+          <span>Magic Date</span>
+        </button>
+        <button class="gallery-card reveal" type="button" data-caption="Every tomorrow looks better when it has you in it.">
+          <img src="assets/images/memory-forever.svg" alt="Forever love memory illustration">
+          <span>Forever Mood</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="story section" aria-labelledby="storyTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Our adorable timeline</p>
+        <h2 id="storyTitle">Our Story</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>❤️</span>
+          <h3>First Talk</h3>
+          <p>A normal day got upgraded into something I never wanted to lose.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>💕</span>
+          <h3>First Laugh</h3>
+          <p>You laughed, I melted, and my standards became permanently ridiculous.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>🌹</span>
+          <h3>First Date</h3>
+          <p>The world got softer, prettier, and suspiciously cinematic.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>🥹</span>
+          <h3>Beautiful Memories</h3>
+          <p>Every tiny moment with you became a keepsake I carry quietly.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>🎂</span>
+          <h3>Today Is Your Birthday</h3>
+          <p>So naturally, the internet had to become dramatic about you.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="funny section" aria-labelledby="funnyTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Comedy department</p>
+        <h2 id="funnyTitle">Reasons Why You're Old Now</h2>
+      </div>
+      <div class="card-grid funny-grid">
+        <article class="mini-card reveal">
+          <h3>Officially Vintage</h3>
+          <p>I checked Google... you're officially vintage.</p>
+        </article>
+        <article class="mini-card reveal">
+          <h3>Sound Effects</h3>
+          <p>You now make weird sounds while standing up.</p>
+        </article>
+        <article class="mini-card reveal">
+          <h3>Uncle Loading</h3>
+          <p>Congratulations! You're now closer to becoming an uncle.</p>
+        </article>
+        <article class="mini-card reveal">
+          <h3>Adult DLC</h3>
+          <p>You've unlocked: Premium Adult Version.</p>
+        </article>
+        <article class="mini-card reveal">
+          <h3>Plot Twist</h3>
+          <p>You still act like a child, which is honestly excellent branding.</p>
+        </article>
+      </div>
+      <div class="center-actions reveal">
+        <button class="btn primary" type="button" id="jokeBtn">😂 Random Joke</button>
+        <button class="btn ghost" type="button" id="emojiRainBtn">🤣 Emoji Rain</button>
+      </div>
+    </section>
+
+    <section class="why-love section" aria-labelledby="whyTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Certified heart facts</p>
+        <h2 id="whyTitle">Why I Love You</h2>
+      </div>
+      <div class="flip-grid">
+        <button class="love-card reveal" type="button">
+          <span class="front">❤️ Your Smile</span>
+          <span class="back">It fixes my whole mood in one second.</span>
+        </button>
+        <button class="love-card reveal" type="button">
+          <span class="front">❤️ Your Kindness</span>
+          <span class="back">You make love feel gentle and safe.</span>
+        </button>
+        <button class="love-card reveal" type="button">
+          <span class="front">❤️ Your Support</span>
+          <span class="back">You make hard days feel less heavy.</span>
+        </button>
+        <button class="love-card reveal" type="button">
+          <span class="front">❤️ Your Crazy Side</span>
+          <span class="back">Life with you is never boring.</span>
+        </button>
+        <button class="love-card reveal" type="button">
+          <span class="front">❤️ Your Laugh</span>
+          <span class="back">My favorite sound, my favorite problem.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="wishes section" aria-labelledby="wishesTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Soft wishes only</p>
+        <h2 id="wishesTitle">Special Wishes</h2>
+      </div>
+      <div class="wish-copy reveal">
+        <p id="wishTyping"></p>
+        <p>May this year bring you peace, success, laughter that hurts your cheeks, and love that feels like home.</p>
+        <p>May you always know how deeply you are cherished, even on the days when I tease you for being ancient.</p>
+      </div>
+    </section>
+
+    <section class="surprise section" aria-labelledby="surpriseTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Tap the glow</p>
+        <h2 id="surpriseTitle">Surprise Box</h2>
+      </div>
+      <button class="gift-box reveal" type="button" id="giftBox" aria-expanded="false" aria-controls="giftMessage">
+        <span class="gift-lid"></span>
+        <span class="gift-ribbon"></span>
+        <span class="gift-body"></span>
+        <span class="gift-bow">❤️</span>
+      </button>
+      <p class="gift-message" id="giftMessage">Surprise! You are loved more than your favorite food, and that is legally a lot.</p>
+    </section>
+
+    <section class="secret section" aria-labelledby="secretTitle">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Secret room</p>
+        <h2 id="secretTitle">Secret Love Message</h2>
+      </div>
+      <form class="secret-form reveal" id="secretForm">
+        <label for="secretCode">Enter the secret code</label>
+        <div class="secret-controls">
+          <input id="secretCode" name="secretCode" type="password" autocomplete="off" placeholder="Try the magic word">
+          <button class="btn primary" type="submit">Unlock ❤️</button>
+        </div>
+        <p class="form-note" id="secretFeedback" aria-live="polite"></p>
+      </form>
+      <article class="secret-page" id="secretPage">
+        <div class="secret-stars" aria-hidden="true"></div>
+        <h3>I Love You More Than Words Can Ever Explain.</h3>
+        <p>You are my favorite person, my calm place, my laughter, and the sweetest part of my future.</p>
+      </article>
+    </section>
+
+    <section class="proposal section" aria-labelledby="proposalTitle">
+      <div class="proposal-card reveal">
+        <p class="section-kicker">Very serious question</p>
+        <h2 id="proposalTitle">Will You Stay With Me Forever?</h2>
+        <div class="proposal-actions">
+          <button class="btn primary" type="button" id="yesBtn">YES ❤️</button>
+          <button class="btn ghost no-btn" type="button" id="noBtn">NO 😅</button>
+        </div>
+        <p class="proposal-message" id="proposalMessage" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="quotes section compact-section reveal" aria-labelledby="quotesTitle">
+      <p class="section-kicker">Rotating heart notes</p>
+      <h2 id="quotesTitle">Emotional Quotes</h2>
+      <blockquote id="quoteText">You are my favorite chapter.</blockquote>
+    </section>
+
+    <section class="ending section" aria-labelledby="endingTitle">
+      <div class="ending-copy reveal">
+        <h2 id="endingTitle">Thank You For Existing.</h2>
+        <p>Happy Birthday My Everything ❤️</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with ❤️ by Your Love · <span id="currentYear"></span></p>
+  </footer>
+
+  <aside class="music-player" aria-label="Floating music player">
+    <div>
+      <p class="song-title" id="songTitle">Moonlit Heartbeats</p>
+      <div class="music-progress" aria-hidden="true"><span id="musicProgress"></span></div>
+    </div>
+    <div class="music-controls">
+      <button type="button" id="prevSong" aria-label="Previous song">⏮</button>
+      <button type="button" id="toggleMusic" aria-label="Play or pause music">▶</button>
+      <button type="button" id="nextSong" aria-label="Next song">⏭</button>
+    </div>
+    <label class="volume-control" for="volumeRange">
+      <span>Vol</span>
+      <input id="volumeRange" type="range" min="0" max="100" value="55">
+    </label>
+  </aside>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" id="lightboxClose" aria-label="Close preview">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

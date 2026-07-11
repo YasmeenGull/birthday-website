@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Starlight smile memory</title>
+  <desc id="desc">A romantic illustrated night with stars, hearts, and a glowing moon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#24102d"/>
+      <stop offset=".48" stop-color="#613277"/>
+      <stop offset="1" stop-color="#ff8db7"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff1aa"/>
+      <stop offset="1" stop-color="#f3c969"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="720" height="900" fill="url(#sky)"/>
+  <circle cx="520" cy="170" r="78" fill="url(#gold)"/>
+  <circle cx="494" cy="146" r="78" fill="#4b245e"/>
+  <g fill="#fff8fb" opacity=".85">
+    <circle cx="92" cy="112" r="5"/>
+    <circle cx="188" cy="204" r="3"/>
+    <circle cx="310" cy="88" r="4"/>
+    <circle cx="602" cy="322" r="4"/>
+    <circle cx="108" cy="392" r="3"/>
+    <circle cx="650" cy="94" r="3"/>
+  </g>
+  <g fill="#f3c969">
+    <path d="M124 168l12 26 26 12-26 12-12 26-12-26-26-12 26-12z"/>
+    <path d="M594 426l9 19 19 9-19 9-9 19-9-19-19-9 19-9z"/>
+  </g>
+  <ellipse cx="360" cy="706" rx="270" ry="82" fill="#130815" opacity=".28" filter="url(#soft)"/>
+  <path fill="#ff78aa" d="M360 628s-112-65-112-151c0-43 31-75 73-75 20 0 35 10 39 27 5-17 19-27 39-27 42 0 73 32 73 75 0 86-112 151-112 151z"/>
+  <path fill="#fff8fb" opacity=".8" d="M240 712c54-74 186-74 240 0-58 48-182 48-240 0z"/>
+  <circle cx="302" cy="675" r="12" fill="#3b1837"/>
+  <circle cx="418" cy="675" r="12" fill="#3b1837"/>
+  <path d="M319 710c28 24 54 24 82 0" fill="none" stroke="#3b1837" stroke-width="9" stroke-linecap="round"/>
+</svg>

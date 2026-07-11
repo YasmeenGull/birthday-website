@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Magic date memory</title>
+  <desc id="desc">A romantic rose garden table under soft lights.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#130815"/>
+      <stop offset=".55" stop-color="#3c1c4a"/>
+      <stop offset="1" stop-color="#82405e"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" x2="1">
+      <stop offset="0" stop-color="#f3c969"/>
+      <stop offset="1" stop-color="#ff78aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#night)"/>
+  <path d="M0 674c112-80 219-100 337-55 137 53 254 25 383-50v331H0z" fill="#1e6b61"/>
+  <g stroke="#f3c969" stroke-width="5" stroke-linecap="round" opacity=".72">
+    <path d="M90 120c135 90 405 90 540 0"/>
+    <path d="M90 120v80M180 164v70M270 184v70M360 190v74M450 184v70M540 164v70M630 120v80"/>
+  </g>
+  <g fill="#fff1aa">
+    <circle cx="90" cy="202" r="12"/>
+    <circle cx="180" cy="236" r="12"/>
+    <circle cx="270" cy="258" r="12"/>
+    <circle cx="360" cy="268" r="12"/>
+    <circle cx="450" cy="258" r="12"/>
+    <circle cx="540" cy="236" r="12"/>
+    <circle cx="630" cy="202" r="12"/>
+  </g>
+  <ellipse cx="360" cy="632" rx="205" ry="66" fill="url(#table)"/>
+  <rect x="270" y="620" width="180" height="200" rx="30" fill="#7c4dff"/>
+  <ellipse cx="360" cy="616" rx="118" ry="36" fill="#fff8fb"/>
+  <g fill="#ff78aa">
+    <path d="M148 734s-40-24-40-55c0-16 12-29 28-29 8 0 14 4 16 11 2-7 8-11 16-11 16 0 28 13 28 29 0 31-48 55-48 55z"/>
+    <path d="M572 706s-34-20-34-48c0-14 11-25 25-25 7 0 12 4 14 10 2-6 7-10 14-10 14 0 25 11 25 25 0 28-44 48-44 48z"/>
+  </g>
+  <path d="M318 572c32-70 52-70 84 0" fill="none" stroke="#ff78aa" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="360" cy="536" r="30" fill="#ff78aa"/>
+  <path fill="#f3c969" d="M360 122l14 30 30 14-30 14-14 30-14-30-30-14 30-14z"/>
+</svg>
